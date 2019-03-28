@@ -4,6 +4,42 @@ body {
     padding: 0;
 }
 
+.move_mouse {
+    border: 4px solid white;
+    color: white;
+    border-radius: 10px;
+    height: 25vh;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    animation: slideUpNDown 2s linear 0.1s infinite forwards normal;
+}
+
+@keyframes slideUpNDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 .content,
 .starter {
     position: absolute;
@@ -18,8 +54,7 @@ body {
 
 .starter {
     z-index: 42;
-    background-color: white;
-    font-family: sans-serif;
+    background-color: black;
 }
 
 .content>img {
@@ -35,6 +70,15 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: black;
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+}
+
+.homepage_title {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 

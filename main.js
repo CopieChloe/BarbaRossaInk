@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   $( document ).on( "mousemove", function( event ) {
-    $('.starter').remove();
+    $('.starter').fadeOut();
     let x = event.pageX;
     let y = event.pageY;
     let string = 'circle(130px at ' + x + 'px ' + y + 'px)';
