@@ -22,8 +22,6 @@ $(document).ready(function (event) {
     $('.fa-bars').addClass('bars_rotate');
     console.log('bars rotate');
     $('menu').removeClass('menu_shrink');
-    $('.close_menu').removeClass('lis_hide');
-          $('.menu_ul').removeClass('lis_hide');
 
     // puis menu widen
     setTimeout(function () {
@@ -46,8 +44,8 @@ $(document).ready(function (event) {
 
         setTimeout(function () {
           console.log('menu elements hide');
-          $('.close_menu').addClass('lis_hide');
-          $('.menu_ul').addClass('lis_hide');
+          $('.close_menu').hide();
+          $('.menu_ul').hide();
           $('.logo_menu').fadeIn();
           $('.fa-bars').fadeIn();
           $('.lien_contact').fadeIn();
@@ -56,23 +54,6 @@ $(document).ready(function (event) {
 
       });
 
-      $('#menu_li1').addClass('fall');
-
-      setTimeout(function () {
-        $('#menu_li2').addClass('fall');
-      }, 300);
-
-      setTimeout(function () {
-        $('#menu_li3').addClass('fall');
-      }, 600);
-
-      setTimeout(function () {
-        $('#menu_li4').addClass('fall');
-      }, 900);
-
-      setTimeout(function () {
-        $('#menu_li5').addClass('fall');
-      }, 1200);
     }, 1300);
 
 
