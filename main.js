@@ -1,6 +1,14 @@
 $(document).ready(function (event) {
 
+  
+  if(window.location.href === 'http://localhost/bacasable/galerie.html') {
+    $('html').css({
+      'height': '100%',
+      'background': 'radial-gradient(ellipse at bottom, rgb(80, 133, 66) 0%, #090a0f 100%)' 
+    })
 
+    
+  }
 
   $(document).on("mousemove", function (event) {
     $('.starter').fadeOut();
@@ -22,12 +30,10 @@ $(document).ready(function (event) {
   $(document).on('click', '.fa-bars', function () {
 
     $('.fa-bars').addClass('bars_rotate');
-    console.log('bars rotate');
     $('menu').removeClass('menu_shrink');
 
     // puis menu widen
     setTimeout(function () {
-      console.log('menu widen');
       $('menu').addClass('menu_widen');
       $('.logo_menu').fadeOut();
       $('.fa-bars').fadeOut();
@@ -36,16 +42,13 @@ $(document).ready(function (event) {
 
     // puis menu links fall
     setTimeout(function () {
-      console.log('lis appear');
       $('menu').append("<div class='close_menu'><i class='fas fa-times'></i></div><ul class='menu_ul'><li class='menu_li' id='menu_li1'><a class='menu_link' href='home.html'>ACCUEIL</a></li><li class='menu_li' id='menu_li2'><a class='menu_link' href='quisommesnous.html'>QUI SOMMES-NOUS?</a></li><li class='menu_li' id='menu_li3'><a class='menu_link' href='galerie.html'>GALERIE</a></li><li class='menu_li' id='menu_li4'><a class='menu_link' href='temoignages.html'>TEMOIGNAGES</a></li><li class='menu_li' id='menu_li5'><a class='menu_link' href='contact.php'>CONTACT</a></li></ul>");
       $('.close_menu').click(function () {
-        console.log('menu closes');
         $('.close_menu').addClass('bars_rotate');
         $('menu').addClass('menu_shrink');
 
 
         setTimeout(function () {
-          console.log('menu elements hide');
           $('.close_menu').hide();
           $('.menu_ul').hide();
           $('.logo_menu').fadeIn();
@@ -88,7 +91,6 @@ $(document).ready(function (event) {
     }, 300);
 
     if ($('.img_galerie').attr('src') == 'img/' + imagesArray[i-1]) {
-      console.log('coucou');
       $('.img_galerie').addClass('slideOutImg');
     }
 
@@ -98,6 +100,17 @@ $(document).ready(function (event) {
 
 
 
+      
+          $('.fb_icon').addClass('animate_icons');
+          setTimeout(function () {
+            $('.insta_icon').addClass('animate_icons');
+          }, 300);
+          setTimeout(function () {
+            $('.tweet_icon').addClass('animate_icons');
+          }, 600);
+          
+          
+  
 
 
   
