@@ -1,5 +1,7 @@
 $(document).ready(function (event) {
 
+
+
   $(document).on("mousemove", function (event) {
     $('.starter').fadeOut();
     let x = event.pageX;
@@ -80,12 +82,27 @@ $(document).ready(function (event) {
   $('.fa-arrow-right').click(function () {
     i = i + 1;
     i = i % imagesArray.length;
-    console.log(i);
-    $('.img_container').html('<img src="img/' + imagesArray[i] + '" alt="photo de la galerie de tatouages" class="img_galerie img_galerie' + imagesArray[i] + '">');
+
+    setTimeout(function () {
+      $('.img_container').html('<img src="img/' + imagesArray[i] + '" alt="photo ' + [i+1] + ' de la galerie de tatouages" class="img_galerie img_galerie' + [i] + '">');
+    }, 300);
+
+    if ($('.img_galerie').attr('src') == 'img/' + imagesArray[i-1]) {
+      console.log('coucou');
+      $('.img_galerie').addClass('slideOutImg');
+    }
+
   });
 
-  $('.img_container').html('<img src="img/' + imagesArray[i] + '" alt="photo de la galerie de tatouages" class="img_galerie img_galerie' + imagesArray[i] + '">');
+  $('.img_container').html('<img src="img/' + imagesArray[i] + '" alt="photo ' + [i+1] + ' de la galerie de tatouages" class="img_galerie img_galerie' + [i] + '">');
 
+
+
+
+
+  
+
+ 
 
 });
 
