@@ -35,7 +35,7 @@ $(document).ready(function (event) {
     // puis menu links fall
     setTimeout(function () {
       console.log('lis appear');
-      $('menu').append("<div class='close_menu'><i class='fas fa-times'></i></div><ul class='menu_ul'><li class='menu_li' id='menu_li1'><a class='menu_link' href='home.html'>Accueil</a></li><li class='menu_li' id='menu_li2'><a class='menu_link' href='quisommesnous.html'>Qui sommes-nous?</a></li><li class='menu_li' id='menu_li3'><a class='menu_link' href='galerie.html'>Galerie</a></li><li class='menu_li' id='menu_li4'><a class='menu_link' href='temoignages.html'>Témoignages</a></li><li class='menu_li' id='menu_li5'><a class='menu_link' href='contact.php'>Contact</a></li></ul>");
+      $('menu').append("<div class='close_menu'><i class='fas fa-times'></i></div><ul class='menu_ul'><li class='menu_li' id='menu_li1'><a class='menu_link' href='home.html'>ACCUEIL</a></li><li class='menu_li' id='menu_li2'><a class='menu_link' href='quisommesnous.html'>QUI SOMMES-NOUS?</a></li><li class='menu_li' id='menu_li3'><a class='menu_link' href='galerie.html'>GALERIE</a></li><li class='menu_li' id='menu_li4'><a class='menu_link' href='temoignages.html'>TEMOIGNAGES</a></li><li class='menu_li' id='menu_li5'><a class='menu_link' href='contact.php'>CONTACT</a></li></ul>");
       $('.close_menu').click(function () {
         console.log('menu closes');
         $('.close_menu').addClass('bars_rotate');
@@ -62,12 +62,29 @@ $(document).ready(function (event) {
 
   });
 
+  let imagesArray = [
+    'cerf.jpg',
+    'feathers.jpg',
+    'game_over.jpg',
+    'main.jpg',
+    'monkey.jpg',
+    'montre.jpg',
+    'person.jpg',
+    'rose.jpg',
+    'scorpion.jpg',
+    'sketch.jpg',
+    'toile.jpg'
+  ]
 
+  let i = 0;
+  $('.fa-arrow-right').click(function () {
+    i = i + 1;
+    i = i % imagesArray.length;
+    console.log(i);
+    $('.img_container').html('<img src="img/' + imagesArray[i] + '" alt="photo de la galerie de tatouages" class="img_galerie img_galerie' + imagesArray[i] + '">');
+  });
 
-
-
-
-
+  $('.img_container').html('<img src="img/' + imagesArray[i] + '" alt="photo de la galerie de tatouages" class="img_galerie img_galerie' + imagesArray[i] + '">');
 
 
 });
