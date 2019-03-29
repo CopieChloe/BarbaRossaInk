@@ -122,6 +122,7 @@ if (!$errorAlert) {
                 <button class="btn" type="submit" name="submit" id="submit_btn">
                     <i class="far fa-envelope"></i>
                     <i class="fas fa-envelope-open-text"></i>
+                    <span class="send">Envoyer</span>
                 </button>    
             </div>   
 

@@ -137,6 +137,11 @@ menu {
     font-size: 1.5rem;
 }
 
+.fa-bars:hover {
+    font-size: 2rem;
+    transition: font-size 300ms ease-in-out;
+}
+
 .bars_rotate {
     animation: barsRotate 300ms;
 }

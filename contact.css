@@ -86,12 +86,23 @@ input:focus, textarea:focus, select:focus {
 
 .btn:hover>.far {
     opacity: 0;
-    transition: all 200ms;
+    transition: all 400ms;
 }
 
 .btn:hover>.fas {
     opacity: 1;
-transition: all 700ms;
+    transition: all 900ms;
+}
+
+
+.btn:hover>.send {
+    display: block;
+    opacity: 1;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: display opacity 500ms;
 }
 
 
@@ -264,4 +275,9 @@ transition: all 700ms;
 .phone_link {
     color: white;
     text-decoration: none;
+}
+
+.send {
+    display: none;
+    opacity: 0;
 }

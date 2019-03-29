@@ -5,9 +5,7 @@ $(document).ready(function (event) {
     $('html').css({
       'height': '100%',
       'background': 'radial-gradient(ellipse at bottom, rgb(80, 133, 66) 0%, #090a0f 100%)' 
-    })
-
-    
+    });    
   }
 
   $(document).on("mousemove", function (event) {
@@ -31,6 +29,7 @@ $(document).ready(function (event) {
 
     $('.fa-bars').addClass('bars_rotate');
     $('menu').removeClass('menu_shrink');
+    $('.overlay').css('z-index', '0');
 
     // puis menu widen
     setTimeout(function () {
@@ -97,19 +96,25 @@ $(document).ready(function (event) {
   });
 
   $('.img_container').html('<img src="img/' + imagesArray[i] + '" alt="photo ' + [i+1] + ' de la galerie de tatouages" class="img_galerie img_galerie' + [i] + '">');
-
-
-
       
-          $('.fb_icon').addClass('animate_icons');
-          setTimeout(function () {
-            $('.insta_icon').addClass('animate_icons');
-          }, 300);
-          setTimeout(function () {
-            $('.tweet_icon').addClass('animate_icons');
-          }, 600);
+  $('.fb_icon').addClass('animate_icons');
+  setTimeout(function () {
+    $('.insta_icon').addClass('animate_icons');
+  }, 300);
+  setTimeout(function () {
+    $('.tweet_icon').addClass('animate_icons');
+  }, 600);
           
-          
+       
+  let typed = new Typed('.typed', {
+    strings: ['Barba Rossa Ink'],
+    stringsElement: null,
+    typeSpeed: 50,
+    startDelay: 100
+  });
+
+
+  
   
 
 
