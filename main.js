@@ -1,7 +1,7 @@
 $(document).ready(function (event) {
 
   
-  if(window.location.href === 'http://localhost/bacasable/galerie.html') {
+  if(window.location.href === 'http://localhost/bacasable/galerie.html' || window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/galerie.html') {
     $('html').css({
       'height': '100%',
       'background': 'radial-gradient(ellipse at bottom, rgb(80, 133, 66) 0%, #090a0f 100%)' 

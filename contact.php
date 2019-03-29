@@ -142,10 +142,7 @@ if (!$errorAlert) {
 
   
     </div>
-    
-    
-    <!-- maps -->
-    <!-- coordonnées -->
+
 
 </body>
 
