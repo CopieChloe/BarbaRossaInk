@@ -1,44 +1,77 @@
 .home_temoignages {
-    height: 0;
+  height: 0;
 }
 
-.img_galerie {
-    max-height: 90vh;
-    width: 40vw;
-    position: absolute;
-    left: 50px;
-    top: 0;
-    animation: slideInImg 1s;
-    margin: 50px 0 0 50px;
+.temoignage_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+  margin: 25vh 0;
 }
 
-@keyframes slideInImg {
-    0% {
-        max-height: 0;
-        width: 0;
-    }
-
-    100% {
-        max-height: 90vh;
-    }
+.temoignage_nom {
+  font-size: 2rem;
 }
 
-.slideOutImg {
-    animation: slideOutImg 500ms;
+.vignette {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
 }
 
-@keyframes slideOutImg {
-   from {
-       max-height: 90vh;
-   }
-
-   to {
-       max-height: 0;
-       width: 0;
-   }
+.photo_temoignage {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;  
+  border: 2px solid black;
 }
 
+.temoignage_content {
+  width: 50%;
+  text-align: center;
+}
 
+.temoignage_nom, 
+.temoignage_content {
+  color: white; 
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.3rem;
+  margin: 0;  
+}
+
+.slideIn {
+  animation: slideIn 300ms ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(60vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.slideOut {
+  animation: slideOut 300ms ease-in;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-60vw);
+    opacity: 0;
+  }
+}
   
   #stars {
     width: 1px;

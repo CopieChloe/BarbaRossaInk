@@ -1,10 +1,10 @@
 $(document).ready(function (event) {
-    
-  if(window.location.href === 'http://localhost/bacasable/temoignages.html' || window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/galerie.html') {
+
+  if (window.location.href === 'http://localhost/bacasable/temoignages.html' || window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/galerie.html') {
     $('html').css({
       'height': '100%',
-      'background': 'radial-gradient(ellipse at bottom, rgb(80, 133, 66) 0%, #090a0f 100%)' 
-    });    
+      'background': 'radial-gradient(ellipse at bottom, rgb(80, 133, 66) 0%, #090a0f 100%)'
+    });
   }
 
   $(document).on("mousemove", function (event) {
@@ -65,8 +65,8 @@ $(document).ready(function (event) {
 
   });
 
-  
-      
+
+
   $('.fb_icon').addClass('animate_icons');
   setTimeout(function () {
     $('.insta_icon').addClass('animate_icons');
@@ -74,9 +74,9 @@ $(document).ready(function (event) {
   setTimeout(function () {
     $('.tweet_icon').addClass('animate_icons');
   }, 600);
-          
-       
- 
+
+
+
 
 });
 
