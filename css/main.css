@@ -1,0 +1,210 @@
+html { 
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.body_starter {
+    cursor: none;
+}
+
+.link_to_home {
+    height: 100vh;
+    width: 100vw;
+}
+
+.black_bg {
+    background-color: black;
+}
+
+.cursor {
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 58;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.move_mouse {
+    border: 4px solid white;
+    color: white;
+    border-radius: 10px;
+    height: 35vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-weight: bolder;
+    font-size: 3rem;
+    animation: slideUpNDown 2s linear 0.1s infinite forwards normal;
+}
+
+@keyframes slideUpNDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.content,
+.starter {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.starter {
+    z-index: 42;
+    background-color: black;
+}
+
+.content>img {
+    height: 90vh;
+    width: auto;
+}
+
+.home {
+    position: relative;
+}
+
+.homepage_title {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 42;
+}
+
+.menu_widen {
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.menu_shrink {
+    width: 50px;
+    transition: all 1s ease-in-out;
+}
+
+.logo_menu {
+    height: 50px;
+    width: auto;
+}
+
+.fa-bars {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.fa-bars:hover {
+    font-size: 2rem;
+    transition: font-size 300ms ease-in-out;
+}
+
+.bars_rotate {
+    animation: barsRotate 300ms;
+}
+
+@keyframes barsRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(270deg);
+    }
+}
+
+.lien_contact {
+    transform: rotate(270deg);
+    background-color: black;
+    color: white;
+    width: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_ul {
+    list-style-type: none;
+}
+
+.menu_link {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    letter-spacing : -5px;
+    color: black;
+    text-decoration: none;
+    font-size: 4rem;    
+}
+
+.close_menu {
+    position: absolute;
+    color: black;
+    right: 50px;
+    top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+}
+
+.menu_li {
+    padding: 10px;
+}
+
+.menu_li:hover,
+.menu_li:focus,
+.menu_li:active {
+    background-color: black;
+    transform: skew(18deg, 5deg);
+    transition: all 200ms;
+}
+
+.menu_li:hover>a,
+.menu_li:focus>a,
+.menu_li:active>a {
+    color: white;
+}
+

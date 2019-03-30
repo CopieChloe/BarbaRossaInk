@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Montserrat|Permanent+Marker|Luckiest+Guy" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="contact.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/contact.css">
     <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script defer src="main.js"></script>
+    <script defer src="js/mymain.js"></script>
     <script async id="timify" type="text/javascript"
     src="https://widget.timify.com/js/widget.js"
     data-position="flexible" >
@@ -68,12 +68,10 @@ if (!$errorAlert) {
 
     <div class="home">
         <menu>
-            <img src="img/logo.jpg" alt="logo barba rossa ink" class="logo_menu">
+            <a href="home.html"><img src="img/logo.jpg" alt="logo barba rossa ink" class="logo_menu"></a>
             <i class="fas fa-bars"></i>
             <a href="contact.php" class="lien_contact">Contact</a>            
         </menu>
-
-        
 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" class="contact_form container-fluid mt-5 mb-5" id="contact_form">
 
@@ -81,13 +79,13 @@ if (!$errorAlert) {
             <div class="networks">
                 
                 <div class="network_icon_container">
-                    <a href=""><i class="fab fa-facebook-square fb_icon networks_icons"></i></a>
+                    <a href="https://www.facebook.com/BarbaRossaInk/"><i class="fab fa-facebook-square fb_icon networks_icons"></i></a>
                 </div>
                 <div class="network_icon_container">
-                    <a href=""><i class="fab fa-instagram insta_icon networks_icons"></i></a>
+                    <a href="http://www.instagram.com/barba_rossa_ink"><i class="fab fa-instagram insta_icon networks_icons"></i></a>
                 </div>
                 <div class="network_icon_container">
-                    <a href=""><i class="fab fa-twitter-square tweet_icon networks_icons"></i></a>
+                    <a href="https://twitter.com/BarbaInk"><i class="fab fa-twitter-square tweet_icon networks_icons"></i></a>
                 </div>
             </div>
 
