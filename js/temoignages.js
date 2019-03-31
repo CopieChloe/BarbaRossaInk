@@ -40,32 +40,34 @@ $(document).ready(function (event) {
   let i = 0;
 
   // put first content
-  $('.temoignage_nom').html('<p class="slideIn slideOut' + i + '">' + names[i] + '</p>');
-  $('.vignette').html('<img src="img/ppl/' + pics[i] + '" alt="photo de client·e" class="slideIn photo_temoignage photo_temoignage' + pics[i] + ' slideOut' + i + '">');
-  $('.temoignage_content').html('<p class="slideIn slideOut' + i + '">' + texts[i] + '</p>');
+  $('.parent').html('<div class="temoignage_container temoignage_container' + i + '"><img src="img/ppl/' + pics[i] + '" alt="photo de client·e" class="photo_temoignage"><div class="left_container"><p class="temoignage_name temoignage_name' + i + '">' + names[i] + '</p><p class="temoignage_text">' + texts[i] + '</p></div></div>');
+
+  $('.parent_next').html('<div class="temoignage_container_next temoignage_container_next' + (i+1) + '"><img src="img/ppl/' + pics[i + 1] + '" alt="photo de client·e" class="photo_temoignage"><div class="left_container"><p class="temoignage_name temoignage_name' + (i + 1) + '">' + names[i + 1] + '</p><p class="temoignage_text_next">' + texts[i + 1] + '</p></div>');
 
   // on click on arrow
-  $('.fa-arrow-right').click(function () {
+  $('.fa-angle-down').click(function () {
     // increment i
     i = i + 1;
-    // and loop if i>names.length
+    // and loop if i>.length
     i = i % names.length;
+    i = i % pics.length;
+    i = i % texts.length;
   
   // and after 300ms
   setTimeout(function () {
     // put next content
-    $('.temoignage_nom').html('<p class="slideIn slideOut' + i + '">' + names[i] + '</p>');
-    $('.vignette').html('<img src="img/ppl/' + pics[i] + '" alt="photo de client·e" class="slideIn photo_temoignage photo_temoignage' + pics[i] + ' slideOut' + i + '">');
-    $('.temoignage_content').html('<p class="slideIn slideOut' + i + '">' + texts[i] + '</p>');      
-  }, 299); 
+    $('.parent').html('<div class="temoignage_container temoignage_container' + i + '"><img src="img/ppl/' + pics[i] + '" alt="photo de client·e" class="photo_temoignage"><div class="left_container"><p class="temoignage_name temoignage_name' + i + '">' + names[i] + '</p><p class="temoignage_text">' + texts[i] + '</p></div></div>');    
+    
+    $('.parent_next').html('<div class="temoignage_container_next temoignage_container_next' + (i + 1) + '"><img src="img/ppl/' + pics[i + 1] + '" alt="photo de client·e" class="photo_temoignage"><div class="left_container"><p class="temoignage_name temoignage_name' + (i + 1) + '">' + names[i + 1] + '</p><p class="temoignage_text_next">' + texts[i + 1] + '</p></div>');   
+        
+  }, 900); 
 
-  // if prev img (img i-1)
-  if ($('.photo_temoignage').attr('src') == 'img/ppl/' + pics[i-1]) {
-    // test i - 1
-    console.log(i-1);
-    $('.slideOut' + (i - 1)).addClass('slideOut');
-  }
+  $('.temoignage_container' + (i-1)).addClass('slideUp');
+  $('.temoignage_container_next' + i).addClass('comeIn');
+  
   
   });
+ 
+
 
 });

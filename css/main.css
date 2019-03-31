@@ -113,7 +113,7 @@ menu {
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    z-index: 42;
+    z-index: 100;
 }
 
 .menu_widen {
