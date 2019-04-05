@@ -1,15 +1,15 @@
 $(document).ready(function (event) {
 
 
-  /*
-  if (window.location.href === 'http://localhost/bacasable/temoignages.html' || window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/temoignages.html') {
+  
+  if (window.location.href === 'http://localhost/bacasable/quisommesnous.html' || window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/quisommesnous.html') {
     $('html').css({
       'height': '100%',
       'background': 'radial-gradient(ellipse at bottom, rgb(80, 133, 66) 0%, #090a0f 100%)'
     });
   }
 
-  */
+  
 
   $(document).on("mousemove", function (event) {
     $('.starter').fadeOut();
