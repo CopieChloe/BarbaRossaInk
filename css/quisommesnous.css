@@ -2,8 +2,7 @@
   height: 0;
 }
 
-.fa-arrow-right,
-.fa-arrow-left {
+.fa-arrow-right {
     text-shadow: 0px 0px 5px white;
     position: absolute; 
     top: 80px;    

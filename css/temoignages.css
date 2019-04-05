@@ -35,7 +35,6 @@
   top: 49vh;
 }
 
-
 .temoignage_container_next,
 .temoignage_container_prev {
   position: absolute;
@@ -56,15 +55,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  text-shadow: 2px 0px 3px #000;
 }
 
 .fa-angle-down:hover {
-  font-size: 7rem;
-  transition: all 300ms;
+  animation: animateArrow 1500ms linear infinite;
+}
+
+@keyframes animateArrow {
+  0% {
+    font-size: 5rem;
+  }
+
+  25% {
+    font-size: 5.5rem;
+  }
+
+  50% {
+    font-size: 5rem;
+  }
+
+  75% {
+    font-size: 4.5rem;
+  }
+
+  100% {
+    font-size: 5rem;
+  }
 }
 
 .temoignage_container:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(117, 117, 117, 0.25), 0 10px 10px rgba(117, 117, 117, 0.25);
 }
 
 .left_container {
@@ -99,18 +121,22 @@
 }
 
 .slideUp {
-  animation: slideUp 1s;  
+  animation: slideUp 1s ease-out;  
 }
 
 @keyframes slideUp {
-  from {
+  0% {
     width: 60vw;
     height: 50vh;
     z-index: 1;
     opacity: 1;
     top: 25vh;
   }
-  to {
+  50% {
+    top: 12vh;
+    opacity: 1;
+  }
+  100% {
     width: 40vw;
     height: 34vh;
     z-index: -48;
@@ -130,6 +156,9 @@
     z-index: -48;
     opacity: 0.3;
     top: 49vh;
+  }
+  50% {
+    top: 53vh;
   }
   100% {
     width: 60vw;

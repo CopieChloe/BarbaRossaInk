@@ -119,9 +119,9 @@ if (!$errorAlert) {
             <div class="input_div col-12 button_div">
                 <button class="btn" type="submit" name="submit" id="submit_btn">
                     <i class="far fa-envelope"></i>
-                    <i class="fas fa-envelope-open-text"></i>
-                    <span class="send">Envoyer</span>
-                </button>    
+                    <i class="fas fa-envelope-open-text"></i>                    
+                </button>   
+                <span class="send">Envoyer</span> 
             </div>   
 
             <div class="coordonnees">

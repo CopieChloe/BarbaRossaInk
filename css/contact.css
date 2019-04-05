@@ -63,6 +63,9 @@ input:focus, textarea:focus, select:focus {
 .button_div {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 20vh;
 }
 
 .btn {
@@ -77,25 +80,33 @@ input:focus, textarea:focus, select:focus {
 }
 
 .btn>.far {
-    position: absolute;
+    opacity: 1;
+    display: block;
 }
 
 .btn>.fas {
     opacity: 0;
+    display: none;
 }
 
 .btn:hover>.far {
+    display: none;
     opacity: 0;
     transition: all 400ms;
 }
 
 .btn:hover>.fas {
+    display: block;
     opacity: 1;
     transition: all 900ms;
 }
 
+.send {    
+    opacity: 0;
+    margin-top: 20px;
+}
 
-.btn:hover>.send {
+.btn:hover + .send {
     display: block;
     opacity: 1;
     color: white;
@@ -275,9 +286,4 @@ input:focus, textarea:focus, select:focus {
 .phone_link {
     color: white;
     text-decoration: none;
-}
-
-.send {
-    display: none;
-    opacity: 0;
 }
