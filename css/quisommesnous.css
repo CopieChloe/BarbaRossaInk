@@ -29,7 +29,7 @@
 
 .logo_who {
   height: 30vh;
-  animation: pulse 500ms infinite, rotate 200ms 2500ms 1 ease-in;
+  animation: pulse 500ms infinite;
 }
 
 @keyframes pulse {
@@ -47,6 +47,10 @@
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+
+.rotate {
+  animation: rotate 200ms ease-in;
 }
 
 @keyframes rotate {
@@ -98,6 +102,62 @@
     transform: translateY(55vh);
     font-size: 0.1rem;
     opacity: 0;
+  }
+}
+
+.face {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Calque_1 {
+  height: 15vh;
+  width: 200%;
+}
+
+.eyes {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eye_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+}
+
+.eye {
+  height: 35px;
+}
+
+.smile_path{
+	fill: none;
+	stroke-width: 0.5px;
+	stroke: white;
+	stroke-dasharray: 10;
+  stroke-dashoffset: 0;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+  animation: smile 1300ms 200ms linear infinite;
+}
+
+@keyframes smile {
+  0% {
+    stroke-dashoffset: 10;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 
