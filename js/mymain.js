@@ -9,7 +9,10 @@ $(document).ready(function (event) {
     });
   }
 
-  
+  if (window.location.href === 'http://localhost/bacasable/index.html' || window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/index.html') {
+    $('.content').addClass('cursor_none');
+    $('.logo_starter').addClass('cursor_none');
+  }  
 
   $(document).on("mousemove", function (event) {
     $('.starter').fadeOut();

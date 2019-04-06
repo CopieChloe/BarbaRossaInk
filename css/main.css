@@ -2,14 +2,14 @@ html {
     overflow: hidden;
 }
 
+.cursor_none {
+    cursor: none;
+}
+
 body {
     position: relative;
     margin: 0;
     padding: 0;
-}
-
-.body_starter {
-    cursor: none;
 }
 
 .link_to_home {

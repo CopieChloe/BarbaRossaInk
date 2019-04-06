@@ -2,6 +2,117 @@
   height: 0;
 }
 
+.who_content {
+  height: 80vh;
+  margin-top: 10vh;
+  width: 50vw;
+  margin-left: 25vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.who_text {
+  color: white;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  font-family: 'Permanent Marker';
+  font-size: 2rem;
+}
+
+.anim {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo_who {
+  height: 30vh;
+  animation: pulse 500ms infinite, rotate 200ms 2500ms 1 ease-in;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.svg-icon {
+  height: 30vh;
+  animation: glow 200ms 3s linear forwards;
+}
+
+@keyframes glow {
+  to {
+    filter: drop-shadow(0px 0px 5px #49ff18);
+  }
+}
+
+.path {
+  stroke-dasharray: 103;
+  stroke-dashoffset: 103;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.corbeille {
+  fill: white;
+}
+
+.svg-icon2 {
+  height: 30vh;
+}
+
+.test {
+  animation: slide 500ms;
+}
+
+@keyframes slide {
+  to {
+    transform: translateY(55vh);
+    font-size: 0.1rem;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .fa-arrow-right {
     text-shadow: 0px 0px 5px white;
     position: absolute; 
