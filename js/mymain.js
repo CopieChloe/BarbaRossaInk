@@ -7,7 +7,7 @@ $(document).ready(function (event) {
       window.location.replace('http://localhost/bacasable/home.html');
     }
 
-    if (window.location.href === window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/index.html') {
+    if (window.location.href === window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/index.html' || 'https://copiechloe.github.io/BarbaRossaInk/') {
       window.location.replace('https://copiechloe.github.io/BarbaRossaInk/home.html');
     }
   }
