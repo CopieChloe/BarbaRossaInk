@@ -1,4 +1,10 @@
+.photo_temoignage {
+  display: none;
+}
 
+.left_container {
+  width: 100%!important;
+}
 
 .temoignage_container,
 .temoignage_container_next,
@@ -194,3 +200,12 @@
   display: none;
 }
 
+@media only screen and (min-width: 900px) {
+  .photo_temoignage {
+    display: block;
+  }
+  
+  .left_container {
+    width: 50%!important;
+  }
+}

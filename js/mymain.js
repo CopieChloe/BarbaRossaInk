@@ -1,6 +1,16 @@
 $(document).ready(function (event) {
 
+  var width = $(window).width();
+  if (width < 900){
+    console.log(width);
+    if (window.location.href === 'http://localhost/bacasable/index.html') {
+      window.location.replace('http://localhost/bacasable/home.html');
+    }
 
+    if (window.location.href === window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/index.html') {
+      window.location.replace('https://copiechloe.github.io/BarbaRossaInk/home.html');
+    }
+  }
   
   if (window.location.href === 'http://localhost/bacasable/quisommesnous.html' || window.location.href === 'https://copiechloe.github.io/BarbaRossaInk/quisommesnous.html') {
     $('html').css({

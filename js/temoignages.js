@@ -53,7 +53,7 @@ $(document).ready(function (event) {
     i = i % pics.length;
     i = i % texts.length;
   
-  // and after 300ms
+  // and after 999ms
   setTimeout(function () {
     // put next content
     $('.parent_prev').html('<div class="temoignage_container_prev temoignage_container_prev' + (i - 1) + '"><img src="img/ppl/' + pics[i - 1] + '" alt="photo de client·e" class="photo_temoignage"><div class="left_container"><p class="temoignage_name temoignage_name' + (i - 1) + '">' + names[i - 1] + '</p><div class="temoignage_text_prev"><p class="textP textPhide">' + texts[i - 1] + '</p></div></div>'); 

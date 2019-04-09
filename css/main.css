@@ -1,3 +1,32 @@
+.menu_link {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;  
+    letter-spacing : -3px;  
+}
+
+.menu_shrink {
+    height: 10vh!important;
+    transition: all 1s ease-in-out;
+}
+
+.menu_widen {
+    height: 100vh;
+    transition: all 1s ease-in-out;
+}
+
+menu {
+height: 10vh;
+width: 100vw;
+flex-direction: row;
+}
+
+.lien_contact {
+    opacity: 0;
+}
+  
 html { 
     overflow: hidden;
 }
@@ -105,25 +134,12 @@ body {
 menu {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 50px;
     background-color: white;
-    display: flex;
-    flex-direction: column;
+    display: flex;    
     justify-content: space-around;
     align-items: center;
     position: absolute;
     z-index: 100;
-}
-
-.menu_widen {
-    width: 100%;
-    transition: all 1s ease-in-out;
-}
-
-.menu_shrink {
-    width: 50px;
-    transition: all 1s ease-in-out;
 }
 
 .logo_menu {
@@ -172,15 +188,6 @@ menu {
     list-style-type: none;
 }
 
-.menu_link {
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
-    letter-spacing : -5px;
-    color: black;
-    text-decoration: none;
-    font-size: 4rem;    
-}
-
 .close_menu {
     position: absolute;
     color: black;
@@ -208,3 +215,30 @@ menu {
     color: white;
 }
 
+@media only screen and (min-width: 900px) {
+    menu {
+        height: 100vh;
+        width: 50px;
+        flex-direction: column;
+    }
+
+    .lien_contact {
+        opacity: 1;
+    }
+
+    .menu_widen {
+        width: 100%;
+        transition: all 1s ease-in-out;
+    }
+
+    .menu_shrink {
+        width: 50px;
+        height: 100vh!important;
+        transition: all 1s ease-in-out;
+    }
+
+    .menu_link {
+        font-size: 4rem;    
+        letter-spacing : -5px;
+    }
+}

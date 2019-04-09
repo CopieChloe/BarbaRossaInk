@@ -21,8 +21,12 @@
     <script async id="timify" type="text/javascript" src="https://widget.timify.com/js/widget.js"
         data-position="flexible">
         </script>
+    <!-- hammer.js -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
+    <script defer src="https://github.com/hammerjs/jquery.hammer.js.git"></script>
     <!-- my scripts -->
     <script defer src="js/mymain.js"></script>
+    <script defer src="js/galerie.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -37,6 +41,15 @@
             <i class="fas fa-bars"></i>
             <a href="contact.php" class="lien_contact">Contact</a>
         </menu>
+
+        <div class="galerie_mobile">
+            <div class="slide_wrapper_mobile">                
+            </div>
+            <div class="arrows_mobile">
+                <i class="arrow_mobile arrow_mobile_right fas fa-angle-right"></i>
+            </div>
+            
+        </div>
 
         <button class="scene-nav scene-nav--prev" data-nav="prev"><i class="fas fa-angle-left"></i></button>
         <button class="scene-nav scene-nav--next" data-nav="next"><i class="fas fa-angle-right"></i></button>
